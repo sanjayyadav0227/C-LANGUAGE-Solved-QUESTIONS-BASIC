@@ -1,0 +1,395 @@
+
+1 --- 10 number sum : dry run 
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int num = 1;
+    int sum =0;
+    while(num <= 10){
+        sum = sum + num;
+        num++;
+    }
+    printf("%d",sum);
+
+    return 0;
+}
+
+
+
+
+
+
+
+----------------------------------------------------------------
+1 -- 5 even number sum 
+
+#include<stdio.h>
+int main(){
+    int a =1;
+    int sum = 0;
+    
+    while(a <= 5){
+        if(a%2==0){
+            sum = sum + a;
+        }
+        a++;
+    }
+    printf("%d",sum);
+    return 0;
+}
+
+
+
+dry run 
+-------------------------------------------------------------------------
+1 ---- 10 odd number sum 
+
+#include<stdio.h>
+int main(){
+    int a =1;
+    int sum = 0;
+    
+    while(a <= 10){
+        if(a%2!=0){
+            sum = sum + a;
+        }
+        a++;
+    }
+    printf("%d",sum);
+    return 0;
+}
+
+
+
+dry run 
+--------------------------------------------------------------------------------
+reverse digit of number : 
+5462358 :reverse (dry run ) 
+
+#include<stdio.h>
+int main(){
+    int num = 5462358;
+    int rem,sum=0;
+    
+    while(num > 0){
+        
+        rem = num % 10;
+        sum = sum * 10 + rem;
+        num = num / 10;
+    }
+    printf("%d",sum);
+    
+   
+    return 0;
+}
+
+
+
+
+--------------------------------------------------------------------------------
+palindrome number :
+123454321 
+
+#include<stdio.h>
+int main(){
+    int num;
+    
+    printf("Enter Your Number : ");
+    scanf("%d",&num);
+    int temp = num;
+    int rem,sum=0;
+    
+    while(num > 0){
+        
+        rem = num % 10;
+        sum = sum * 10 + rem;
+        num = num / 10;
+    }
+    if(temp == sum){
+        printf("Palindrome Number");
+    }
+    else{
+        printf("Not Palindrome");
+    }
+    
+   
+    return 0;
+}
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+657 
+
+#include<stdio.h>
+int main(){
+    int num;
+    
+    printf("Enter Your Number : ");
+    scanf("%d",&num);
+    int temp = num;
+    int rem,sum=0;
+    
+    while(num > 0){
+        
+        rem = num % 10;
+        sum = sum * 10 + rem;
+        num = num / 10;
+    }
+    if(temp == sum){
+        printf("Palindrome Number");
+    }
+    else{
+        printf("Not Palindrome");
+    }
+    
+   
+    return 0;
+}
+
+
+
+--------------------------------------------------------------------------------
+Armstrong number :
+
+153
+
+
+#include<stdio.h>
+int main(){
+    int num = 153;
+    int temp = num;
+    
+    int rem,sum = 0;
+    
+    while(num>0){
+        
+        rem = num % 10;
+        sum = sum + rem * rem * rem;
+        num = num /10;
+    }
+    if(temp == sum){
+        printf("Armstrong Number");
+    }
+    else{
+        printf("Not Armstrong Number");
+    }
+    
+    
+   
+    return 0;
+}
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+151 
+
+
+
+
+#include<stdio.h>
+int main(){
+    int num = 151;
+    int temp = num;
+    
+    int rem,sum = 0;
+    
+    while(num>0){
+        
+        rem = num % 10;
+        sum = sum + rem * rem * rem;
+        num = num /10;
+    }
+    if(temp == sum){
+        printf("Armstrong Number");
+    }
+    else{
+        printf("Not Armstrong Number");
+    }
+    
+    
+   
+    return 0;
+}
+
+
+
+dry run 
+--------------------------------------------------------------------------------
+write a c program input character :
+	a :
+		number input 
+		check number Armstrong or not 
+
+	r :
+		number input 
+		number reverse of digit 
+
+	p :
+		number input 
+		check number palindrome number 
+
+	otherwise :input is not matched 
+
+
+
+#include<stdio.h>
+int main(){
+   char ch;
+   
+   printf("Enter a for (Armstrong) p for (Palindrome) r for (Reverse) : ");
+   scanf("%c",&ch);
+   
+   if(ch == 'a'){
+       int num,rem,sum = 0;
+       
+       printf("Enter Any Number To Check Its Armstrong Number Or Not : ");
+       scanf(" %d",&num);
+       int temp = num;
+       
+       while(num > 0){
+           rem = num % 10;
+           sum = sum + rem * rem * rem;
+           num = num / 10;
+       }
+       if(temp == sum){
+           printf("its Armstrong Number");
+       }
+       else{
+           printf("Not Armstrong Number");
+       }
+   }
+   else if(ch == 'p'){
+       int num,rem,sum = 0;
+       printf("Enter Any Number To Check Its Palindrome Number Or Not : ");
+       scanf("%d",&num);
+       int temp = num;
+       
+       while(num > 0){
+           rem = num % 10;
+           sum = sum * 10 + rem;
+           num = num / 10;
+       }
+       if(temp == sum){
+           printf("Its Palindrome Number");
+       }
+       else{
+           printf("Not Palindrome Number");
+       }
+   }
+   else if(ch == 'r'){
+       int num,rem,sum = 0;
+       printf("Enter Any Number To Reverse : ");
+       scanf("%d",&num);
+      
+       while(num > 0){
+           rem = num % 10;
+           sum = sum * 10 + rem;
+           num = num /10;
+       }
+       printf("%d",sum);
+   }
+   else{
+       printf("Input is Not Matched !!!!!");
+   }
+    
+    
+   
+    return 0;
+}
+
+
+
+
+--------------------------------------------------------------------------------
+neon number : 
+
+9 
+
+first :square (9*9 =81) 
+
+8+1 => 9
+
+
+>>>>>>>>>>>>>>>>>>> 
+
+#include <stdio.h>
+
+int main() {
+    int num, square, sum = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    square = num * num;
+
+    while (square > 0) {
+        sum = sum + square % 10;  
+        square = square / 10;         
+    }
+
+    if (sum == num) {
+        printf("%d is a neon number.\n", num);
+    } else {
+        printf("%d is not a neon number.\n", num);
+    }
+
+    return 0;
+}
+
+
+
+--------------------------------------------------------------------------------
+2 table print 
+2 4 6 8 ....20 
+
+#include <stdio.h>
+
+int main() {
+   
+   int a=1;
+   
+   while(a <= 20){
+       if(a%2 == 0){
+           printf("%d ",a);
+       }
+       a++;
+   }
+
+    return 0;
+}
+
+
+
+
+--------------------------------------------------------------------------------
+write a c program input number :
+	453 :sum of digit 
+	4+5+3 =>12 
+
+-----------
+
+#include <stdio.h>
+
+int main() {
+    int num, sum = 0;
+    
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    while (num > 0) {
+        sum = sum + num % 10;
+        num = num / 10;
+    }
+    
+    printf("Sum : %d", sum);
+    
+    return 0;
+}
+
+----------------------------------------------------------------------------

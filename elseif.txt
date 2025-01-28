@@ -1,0 +1,130 @@
+Q)write a c program input number 1 :one 
+				 2 :two
+				 3 :three
+				 4 :four 
+				 otherwise :input is not matched 
+
+-------
+
+Ans)
+
+	#include <stdio.h>
+
+	int main() {
+ 	int num;
+
+	 printf("Enter Any Number : ");
+	 scanf("%d",&num);
+
+	if(num == 1){
+		printf("One");
+	}
+	else if(num == 2){
+		printf("Two");
+	}
+	else if(num == 3){
+		printf("Three");
+	}
+	else if(num == 4){
+		printf("Four");
+	}
+	else{
+		printf("Input is not matched");
+	}
+
+    return 0;
+}
+-----------------------------------------------------------------------
+
+Q)write a c program input character a:apple
+				    b :ball
+				otherwise input is not matched 
+
+-------
+
+Ans)
+
+#include<stdio.h>
+     int main(){
+    	 char ch;
+    	 printf("Enter Any Character : ");
+    	 scanf("%c",&ch);
+    
+    	  if(ch == 'a'){
+        	printf("Apple");
+    	}
+    	  else if(ch == 'b'){
+        	printf("Ball");
+    	}
+    	  else{
+        	printf("input character is not matched");
+    	}
+      return 0;
+}
+------------------------------------------------------------------------
+
+Q)write a c program input character a:
+				two number input addition 
+
+				s:
+				two number input substraction 
+
+				m:
+				two number input multiplication
+
+				d:
+				two number input divide
+
+				otherwise input is not matched   
+
+-------
+
+Ans)
+	
+	
+	#include<stdio.h>
+	int main(){
+   	 char ch;
+   	 printf("Enter Any Character : ");
+   	 scanf("%c",&ch);
+    
+     if(ch == 'a'){
+       	 int x,y,z;
+       	 printf("Enter Any Two Numbers : ");
+       	 scanf("%d  %d",&x ,&y);
+        
+       	 z = x + y;
+      	 printf("The Addition Of Numbers Is : %d",z);
+        
+    }
+     else if(ch == 's'){
+        int p,q,r;
+        printf("Enter Any Two Numbers : ");
+        scanf("%d  %d", &p ,&q);
+        
+        r = p - q;
+        printf("The Substraction OF Numbers is : %d",r);
+    }
+     else if(ch == 'm'){
+        int h,i,j;
+        printf("Enter Any Two Numbers : ");
+        scanf("%d  %d",&h ,&i);
+        
+        j = h * i;
+        printf("The Multiplication Of Numbers Is : %d",j);
+    }
+     else if(ch == 'd'){
+        int k,l,n;
+        printf("Enter Any Two Numbers : ");
+        scanf("%d  %d",&k ,&l);
+        
+        n = k / l;
+        printf("The Division Of Numbers is : %d", n);
+    }
+        else{
+        printf("input character is not matched");
+    }
+return 0;
+}
+
+--------------------------------------------------------------------------

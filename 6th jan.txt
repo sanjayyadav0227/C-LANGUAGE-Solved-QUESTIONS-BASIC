@@ -1,0 +1,420 @@
+1 ---- 10 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 1;
+    
+    while(a <= 10){
+        printf("%d ",a);
+        a++;
+    }
+    
+    return 0;
+}
+
+dry run >>>>>
+
+a = 1  --> a<= 10  --> (1<=10) --> true --> print 1 --> a++ --> value change 1 to 2 now
+
+a = 2  --> a<= 10  --> (2<=10) --> true --> print 1 --> a++ --> value change 2 to 3 now
+
+a = 3  --> a<= 10  --> (3<=10) --> true --> print 1 --> a++ --> value change 3 to 4 now
+
+a = 4  --> a<= 10  --> (4<=10) --> true --> print 1 --> a++ --> value change 4 to 5 now
+
+a = 5  --> a<= 10  --> (5<=10) --> true --> print 1 --> a++ --> value change 5 to 6 now
+
+a = 6  --> a<= 10  --> (6<=10) --> true --> print 1 --> a++ --> value change 6 to 7 now
+
+a = 7  --> a<= 10  --> (7<=10) --> true --> print 1 --> a++ --> value change 7 to 8 now
+
+a = 8  --> a<= 10  --> (8<=10) --> true --> print 1 --> a++ --> value change 8 to 9 now
+
+a = 9  --> a<= 10  --> (9<=10) --> true --> print 1 --> a++ --> value change 9 to 10 now
+
+a = 10  --> a<= 10  --> (10<=10) --> true --> print 1 --> a++ --> value not change because our condition is ( a <= 10)
+
+a = 11  --> a<= 10  --> (11<=10) --> false --> --> loop terminated here !!!!! 
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+----------------------------------------------
+1 --- 100 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 1;
+    
+    while(a <= 100){
+        printf("%d ",a);
+        a++;
+    }
+    
+    return 0;
+}
+
+
+
+----------------------------------------------
+23 -- 78 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 23;
+    
+    while(a <= 78){
+        printf("%d ",a);
+        a++;
+    }
+    
+    return 0;
+}
+
+----------------------------------------------
+
+10 ---- 1 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 10;
+    
+    while(a >= 1){
+        printf("%d ",a);
+        a--;
+    }
+    
+    return 0;
+}
+
+
+
+
+
+loop 
+--------------------------------------------
+100 --- 1 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 100;
+    
+    while(a >= 1){
+        printf("%d ",a);
+        a--;
+    }
+    
+    return 0;
+}
+
+
+
+
+-----------------------------
+78 ----45 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 78;
+    
+    while(a >= 45){
+        printf("%d ",a);
+        a--;
+    }
+    
+    return 0;
+}
+
+
+============================================================
+even number 
+
+1 ---- 10 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 1;
+    
+    while(a <= 10){
+        if(a%2==0){
+            printf("%d",a);
+        }
+        a++;
+    }
+    
+    return 0;
+}
+
+
+dry run >>>>>>>>>>>>>
+
+
+a = 1 --> a <= 10 --> (1 <= 10) --> True --> Check if even: (1 % 2 == 0) --> False (1 is odd) --> No print --> a++ --> value change 1 to 2
+
+a = 2 --> a <= 10 --> (2 <= 10) --> True --> Check if even: (2 % 2 == 0) --> True (2 is even) --> Print 2 --> a++ --> value change 2 to 3
+
+a = 3 --> a <= 10 --> (3 <= 10) --> True --> Check if even: (3 % 2 == 0) --> False (3 is odd) --> No print --> a++ --> value change 3 to 4
+
+a = 4 --> a <= 10 --> (4 <= 10) --> True --> Check if even: (4 % 2 == 0) --> True (4 is even) --> Print 4 --> a++ --> value change 4 to 5
+
+a = 5 --> a <= 10 --> (5 <= 10) --> True --> Check if even: (5 % 2 == 0) --> False (5 is odd) --> No print --> a++ --> value change 5 to 6
+
+a = 6 --> a <= 10 --> (6 <= 10) --> True --> Check if even: (6 % 2 == 0) --> True (6 is even) --> Print 6 --> a++ --> value change 6 to 7
+
+a = 7 --> a <= 10 --> (7 <= 10) --> True --> Check if even: (7 % 2 == 0) --> False (7 is odd) --> No print --> a++ --> value change 7 to 8
+
+a = 8 --> a <= 10 --> (8 <= 10) --> True --> Check if even: (8 % 2 == 0) --> True (8 is even) --> Print 8 --> a++ --> value change 8 to 9
+
+a = 9 --> a <= 10 --> (9 <= 10) --> True --> Check if even: (9 % 2 == 0) --> False (9 is odd) --> No print --> a++ --> value change 9 to 10
+
+a = 10 --> a <= 10 --> (10 <= 10) --> True --> Check if even: (10 % 2 == 0) --> True (10 is even) --> Print 10 --> a++ --> value change 10 to 11
+
+a = 11 --> a <= 10 --> (11 <= 10) --> False --> Loop terminates here
+
+
+dry run 
+----------------------------------------------
+1 --- 100 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 1;
+    
+    while(a <= 100){
+        if(a%2==0){
+            printf("%d\n",a);
+        }
+        a++;
+    }
+    
+    return 0;
+}
+
+
+
+----------------------------------------------
+23 -- 78 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 23;
+    
+    while(a <= 78){
+        if(a%2==0){
+            printf("%d\n",a);
+        }
+        a++;
+    }
+    
+    return 0;
+}
+
+
+
+----------------------------------------------
+10 ---- 1 number print 
+
+
+#include<stdio.h>
+int main(){
+    
+    int a = 10;
+    
+    while(a >= 1){
+        if(a%2==0){
+            printf("%d\n",a);
+        }
+        a--;
+    }
+    
+    return 0;
+}
+
+
+loop 
+--------------------------------------------
+100 --- 1 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 100;
+    
+    while(a >= 1){
+        if(a%2==0){
+            printf("%d\n",a);
+        }
+        a--;
+    }
+    
+    return 0;
+}
+
+
+-----------------------------
+78 ----45 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 78;
+    
+    while(a >= 45){
+        if(a%2==0){
+            printf("%d\n",a);
+        }
+        a--;
+    }
+    
+    return 0;
+}
+
+
+
+=======================================================
+odd numbers :
+1 ---- 10 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 1;
+    
+    while(a <= 10){
+        if(a%2!=0){
+            printf("%d\n",a);
+        }
+        a++;
+    }
+    
+    return 0;
+}
+
+dry run >>>>>>>>>>>
+
+a = 1 --> a <= 10 --> (1 <= 10) --> True --> Check if odd: (1 % 2 != 0) --> True (1 is odd) --> Print 1 --> a++ --> value change 1 to 2
+
+a = 2 --> a <= 10 --> (2 <= 10) --> True --> Check if odd: (2 % 2 != 0) --> false (2 is odd) --> no Print 2 --> a++ --> value change 2 to 3
+
+a = 3 --> a <= 10 --> (3 <= 10) --> True --> Check if odd: (3 % 2 != 0) --> true (3 is odd) --> Print 3 --> a++ --> value change 3 to 4
+
+a = 4 --> a <= 10 --> (4 <= 10) --> True --> Check if odd: (4 % 2 != 0) --> false (4 is odd) --> no Print 4 --> a++ --> value change 4 to 5
+
+a = 5 --> a <= 10 --> (5 <= 10) --> True --> Check if odd: (5 % 2 != 0) --> true (5 is odd) --> Print 5 --> a++ --> value change 5 to 6
+
+a = 6 --> a <= 10 --> (6 <= 10) --> True --> Check if odd: (6 % 2 != 0) --> false (6 is odd) --> no Print 6 --> a++ --> value change 6 to 7
+
+a = 7 --> a <= 10 --> (7 <= 10) --> True --> Check if odd: (7 % 2 != 0) --> True (7 is odd) --> Print 7 --> a++ --> value change 7 to 8
+
+a = 8 --> a <= 10 --> (8 <= 10) --> True --> Check if odd: (8 % 2 != 0) --> false (8 is odd) --> no Print 8 --> a++ --> value change 8 to 9
+
+a = 9 --> a <= 10 --> (9 <= 10) --> True --> Check if odd: (9 % 2 != 0) --> True (9 is odd) --> Print 9 --> a++ --> value change 9 to 10
+
+a = 10 --> a <= 10 --> (10 <= 10) --> True --> Check if odd: (10 % 2 != 0) --> false (10 is even) --> no Print 10 --> a++ --> value change 10 to 11
+
+a = 11 --> a <= 10 --> (11 <= 10) --> False --> Loop terminates here
+
+
+
+
+dry run 
+----------------------------------------------
+1 --- 100 number print 
+
+
+#include<stdio.h>
+int main(){
+    
+    int a = 1;
+    
+    while(a <= 100){
+        if(a%2!=0){
+            printf("%d\n",a);
+        }
+        a++;
+    }
+    
+    return 0;
+}
+
+
+----------------------------------------------
+23 -- 78 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 23;
+    
+    while(a <= 78){
+        if(a%2!=0){
+            printf("%d\n",a);
+        }
+        a++;
+    }
+    
+    return 0;
+}
+
+----------------------------------------------
+10 ---- 1 number print 
+
+
+#include<stdio.h>
+int main(){
+    
+    int a = 1;
+    
+    while(a <= 10){
+        printf("%d ",a);
+        a++;
+    }
+    
+    return 0;
+}
+
+
+loop 
+--------------------------------------------
+100 --- 1 number print 
+
+
+
+#include<stdio.h>
+int main(){
+    
+    int a = 1;
+    
+    while(a <= 100){
+        printf("%d ",a);
+        a++;
+    }
+    
+    return 0;
+}
+
+-----------------------------
+78 ----45 number print 
+
+#include<stdio.h>
+int main(){
+    
+    int a = 78;
+    
+    while(a >= 45){
+        printf("%d ",a);
+        a--;
+    }
+    
+    return 0;
+}
+--------------------------------------------------------------------------end------------------------------------------------------------------------

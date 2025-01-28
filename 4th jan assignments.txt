@@ -1,0 +1,670 @@
+
+Q)write a c program input character :(a,e,i,o,u :vowel )
+				    otherwise :consoant 
+---------
+
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("Enter Any Character : ");
+    scanf("%c",&ch);
+    
+    if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+        printf("Vowel");
+    }
+    else{
+        printf("Consonant");
+    }
+
+    return 0;
+}
+------------------------------------------------------------------
+
+------------------------------------------------------------------
+Q)write a c program input character :(a,s,d,f,g,h,j,k,l ) :mid line 
+				 otherwise :input is not matched 
+
+----------------
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("Enter Any Character : ");
+    scanf("%c",&ch);
+    
+    if(ch == 'a' || ch == 's' || ch == 'd' || ch == 'f' || ch == 'g' || ch == 'h' || ch == 'j' || ch == 'k' || ch == 'l'){
+        printf("Mid Line");
+    }
+    else{
+        printf("Not Found In Mid Line");
+    }
+
+    return 0;
+}
+
+-------------------------------------------------------------------------
+Q)write a c program input character :q,w,e,r,t,y,u,i,o,p :upper line 
+					a,s,d,f,g,h,j,k,l :mid line 
+					z,x,c,v,b,n,m :lower line 
+					otherwise input is not matched 
+
+
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("Enter Any Character : ");
+    scanf("%c",&ch);
+    
+    if(ch == 'q' || ch == 'w' || ch == 'e' || ch == 'r' || ch == 't' || ch == 'y' || ch == 'u' || ch == 'i' || ch == 'o' || ch == 'p'){
+        printf("Upper Line");
+    }
+    else if(ch == 'a' || ch == 's' || ch == 'd' || ch == 'f' || ch == 'g' || ch == 'h' || ch == 'j' || ch == 'k' || ch == 'l'){
+        printf("Mid Line");
+    }
+    else if(ch == 'z' || ch == 'x' || ch == 'c' || ch == 'v' || ch == 'b' || ch == 'n' || ch == 'm'){
+        printf("Lower Line");
+    }
+    else{
+        printf("Input is not matched");
+    }
+
+    return 0;
+}
+
+-------------------------------------------------------------------------
+Q)write a c program input two number and which one is maximum :
+	a and b
+
+
+
+#include <stdio.h>
+int main() {
+   int a;
+   printf("Enter The Value Of a : ");
+   scanf("%d",&a);
+   int b;
+   printf("Enter The Value Of b : ");
+   scanf("%d",&b);
+   
+   if(a>b){
+       printf("a Is Greater Than b");
+   }
+   else{
+       printf("b Is Greater Than a");
+   }
+   
+
+    return 0;
+}
+
+ 
+-------------------------------------------------------------------------
+Q)write a c program input number check number is present between 21 to 30 or not ? 
+
+
+
+#include <stdio.h>
+int main() {
+ int num;
+ printf("Enter Any Number : ");
+ scanf("%d",&num);
+ 
+ if(num >= 21 && num <= 30){
+     printf("Number Is Presant Between 21 To 30");
+ }
+ else{
+     printf("Number Is Not Presant Between 21 To 30");
+ }
+   
+
+    return 0;
+}
+
+
+-------------------------------------------------------------------------
+Q)write a c program input number :
+				1 --- 10 :number is present between 1 to 10 
+				11 --- 20 :number is present between 11 to 20
+				21 ---- 30 :number is present between 21 to 30 
+				otherwise input is not matched 
+
+
+
+#include <stdio.h>
+int main() {
+int num;
+printf("Enter Any Number : ");
+scanf("%d",&num);
+
+if(num >= 1 && num <= 10){
+    printf("Number Is Presant Between 1 to 10");
+}
+else if(num >= 11 && num <= 20){
+    printf("Number Is Presant Between 11 to 20");
+}
+else if(num >= 21 && num <= 30){
+    printf("Number Is Presant Between 21 to 30");
+}
+else{
+    printf("Input is not matched");
+}
+
+    return 0;
+}
+
+
+-------------------------------------------------------------------------------
+Q)write a c program input character :
+			f :female 
+			m :male 
+			otherwise :not matched 
+
+
+
+#include <stdio.h>
+int main() {
+char ch;
+printf("Enter Any Single Character : ");
+scanf("%c",&ch);
+
+if(ch == 'f'){
+    printf("Female");
+}
+else if(ch == 'm'){
+    printf("Male");
+}
+else{
+    printf("Input Character Is Not Matched");
+}
+
+    return 0;
+}
+
+
+----------------------------------------------------------------------
+C program to enter student marks and find percentage and grade
+A college has the following rules for the grading system:
+5 marks (grade + %)
+1. Below 25 – F
+2. 25 to 45 – E
+3. 45 to 50 – D
+4. 50 to 60 – C
+5. 60 to 80 – B 
+6. Above 80 – A
+
+----------------------
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int class;
+    printf("Enter Your Class : ");
+    scanf("%d",&class);
+
+    if(class == 10 || class == 12){
+        int a,b,c,d,e;
+        printf("Enter Your english marks : ");
+        scanf("%d",&a);
+        printf("English : %d\n",a);
+
+        printf("Enter your hindi marks : ");
+        scanf("%d",&b);
+        printf("Hindi : %d\n",b);
+
+        printf("Enter Your Mathmstics Marks : ");
+        scanf("%d",&c);
+        printf("Mathmatics : %d\n",c);
+
+        printf("Enter Your Science Marks : ");
+        scanf("%d",&d);
+        printf("Science : %d\n",d);
+
+        printf("Enter Your SSC Marks : ");
+        scanf("%d",&e);
+        printf("SSC : %d\n",e);
+
+        int total;
+        total = a + b + c + d + e;
+        printf("You Got Total Marks is : %d\n",total);
+        printf("And You Have 5 Subjects\n");
+
+        float per;
+        per = total/5;
+
+        printf("Percentage = %f\n",per);
+
+        if(per <= 25){
+            printf("Grade : F");
+        }
+        else if(per >= 26 && per <= 45){
+            printf("Grade : E");
+        }
+        else if(per >= 46 && per <= 50){
+            printf("Grade : D");
+        }
+        else if(per >= 51 && per <= 60){
+            printf("Grade : C");
+        }
+        else if(per >= 61 && per <= 80){
+            printf("Grade : B");
+        }
+        else if(per >= 80 && per <= 100){
+            printf("Grade : A");
+        }
+
+    }
+    else{
+        printf("Invalid !!!!");
+    }
+
+    return 0;
+}
+
+
+
+
+--------------------------------------------------------------------
+Write a C program to read the roll no, name,fnname and marks of three subjects and calculate the total, percentage and division.
+Test Data :
+Input the Roll Number of the student :784
+student name : 
+fname:
+mname:
+address:
+contact:
+Input the marks of Physics, Chemistry and Computer Application : 70 80 90
+total: 
+precentage : % 
+division:
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int roll;
+    printf("Enter Your Roll Number : ");
+    scanf("%d",&roll);
+
+    char s,f;
+
+    printf("Enter Your Name : ");
+    scanf("%s",&s);
+    printf("Enter Father Name : ");
+    scanf(" %s",&f);
+
+
+    int m1,m2,m3;
+
+    printf("Enter Your Physics Marks : ");
+    scanf("%d",&m1);
+    printf("Enter Your Chemistry Marks : ");
+    scanf("%d",&m2);
+    printf("Enter Your Computer Application Marks : ");
+    scanf(" %d",&m3);
+
+    int total;
+
+    total = m1 + m2 + m3;
+
+    printf("Total Marks You Got : %d\n",total);
+
+    float per;
+
+    per = total / 3;
+
+    printf(" Percentage of Marks is : %f\n",per);
+
+    if(per >= 33 && per <= 45){
+        printf("Third Division");
+    }
+    else if(per >= 46 && per <= 59){
+        printf("Second Division");
+    }
+    else if(per >= 60 && per <= 100){
+        printf("First Division");
+    }
+
+    return 0;
+}
+
+
+
+
+
+-----------------------------------------------
+salalry :
+holidays (1) =full salary 
+2-5 =5% 
+5-14 =10% 
+15 =50% 
+else =not salary 
+
+output : 
+name:
+address: 
+bank details: 
+salary : 
+alot :
+ holidays 
+
+----------------------------->>>
+
+#include <stdio.h>
+
+int main()
+{
+   int salary, holiday, ded, bank;
+   char name,address;
+   
+   printf("Enter Your NAME : ");
+   scanf("%s",&name);
+   printf("Enter Your Address : ");
+   scanf("%s",&address);
+   
+   printf("Enter Your Salary : ");
+   scanf("%d",&salary);
+   
+   printf("Enter your holidays : ");
+   scanf("%d",&holiday);
+   
+   printf("Enter your Bank Ac No : ");
+   scanf("%d",&bank);
+   
+   if(holiday == 1 || holiday == 0){
+       printf("Salary : %d",salary);
+   }
+   else if(holiday >= 2 && holiday <= 5){
+       ded = salary*5/100;
+       salary = salary - ded;
+       printf("Salary Alot : %d",salary);
+   }
+   else if (holiday >= 6 && holiday <= 14){
+       ded = salary*10/100;
+       salary = salary - ded;
+       printf("Salary Alot : %d",salary);
+   }
+   else if(holiday == 15){
+       ded = salary*50/100;
+       salary = salary -ded;
+       printf("Salary Alot : %d",salary);
+   }
+   else{
+       printf("No Salary :( ");
+   }
+    return 0;
+}
+
+
+
+
+------------------------------------------------------------------------
+electric city bill : 
+4 unit 
+40 
+1- 10 = 10% 
+11-20 =15% 
+21-40 =30% 
+50 =50% 
+
+output : 
+name:
+unit :3 
+amout 30 
+discout : 10% 
+total pay amount : 
+
+
+#include <stdio.h>
+
+int main()
+{
+   int unit, a, b, c;
+   char name;
+   
+   printf("Enter Your Name : ");
+   scanf("%s",&name);
+   
+   printf("Enter Unit : ");
+   scanf("%d",&unit);
+   
+   if(unit >= 1 && unit <= 10){
+       a = unit*10;
+       printf("Before Discount : %d\n",a);
+       b = a * 10 / 100;
+       c = a - b;
+       printf("After 10%% Discount : %d",c);
+   }
+   else if(unit >= 11 && unit <= 20){
+       a = unit*15;
+       printf("Before Discount : %d\n",a);
+       b = a * 15 / 100;
+       c = a - b;
+       printf("After 15%% Discount : %d",c);
+   }
+   else if(unit >= 21 && unit <= 40){
+       a = unit*30;
+       printf("Before Discount : %d\n",a);
+       b = a * 30 / 100;
+       c = a - b;
+       printf("After 30%% Discount : %d",c);
+   }
+   else if(unit == 50){
+       a = unit*50;
+       printf("Before Discount : %d\n",a);
+       b = a * 50 / 100;
+       c = a - b;
+       printf("After 50%% Discount : %d",c);
+   }
+    return 0;
+}
+
+
+-------------------------------------------------------------------------
+Write a Java program that calculates income tax for individuals based on the following criteria:
+
+Income <= 10,000: No tax
+10,001 - 30,000: 10% tax
+30,001 - 50,000: 20% tax
+Income > 50,000: 30% tax
+
+--------------
+
+#include<stdio.h>
+int main(){
+    int salary,tax;
+    
+    printf("Enter Your Salary : ");
+    scanf("%d",&salary);
+    
+    if(salary <= 10000){
+        printf("No Tax");
+    }
+    else if(salary >= 10001 && salary <= 30000){
+        tax = (salary - 10000) * 0.10;
+        salary = salary - tax;
+        printf("Salary After 10%% Tax : %d",salary);
+    }
+    else if(salary >= 30001 && salary <= 50000){
+        tax = (salary - 20000) * 0.20;
+        salary = salary - tax;
+        printf("Salary After 20%% Tax : %d",salary);
+    }
+    else if(salary > 50000){
+        tax = (salary - 30000) * 0.30;
+        salary = salary - tax;
+        printf("Salary After 30%% Tax : %d",salary);
+    }
+    return 0;
+}
+
+--------------------------------------------------------------------------
+
+-------------------------------------------------------------------------
+Create a program that calculates the Body Mass Index (BMI) based on a person's weight and height. Categorize the BMI using the following ranges:
+
+BMI < 18.5: Underweight
+18.5 <= BMI < 24.9: Normal weight
+25 <= BMI < 29.9: Overweight
+BMI >= 30: Obesity
+
+------------------
+
+#include<stdio.h>
+int main(){
+    float weight, height;
+    printf("Enter Your Weight : ");
+    scanf("%f",&weight);
+    
+    printf("Enter Your Height in Meters : ");
+    scanf(" %f",&height);
+    
+    float bmi;
+    //BMI = weight (kg) / [height (m)]2
+    
+    bmi = weight/(height * height);
+    printf("BMI : %f\n",bmi);
+    
+    if(bmi < 18.5){
+        printf("Underweight\n");
+    }
+    else if(bmi >= 18.5 && bmi <= 24.9){
+        printf("Normal Weight\n");
+    }
+    else if(bmi >= 25 && bmi <= 29.9){
+        printf("Overweight\n");
+    }
+    else if(bmi >= 30){
+        printf("Obesity");
+    }
+    
+    return 0;
+}
+
+
+--------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
+Write a C program to convert temperatures between Celsius and Fahrenheit. The program should ask the user for the input temperature and the unit (C or F) and provide the converted temperature.
+
+---------------------
+
+#include<stdio.h>
+int main(){
+    
+    char unit;
+    float temp, contemp;
+    
+    printf("Enter The Temperature :");
+    scanf("%f",&temp);
+    
+    printf("Enter the unit C for Celsius or F for Fahrenheit: ");
+    scanf(" %c",&unit);
+    
+    if(unit == 'c'){
+       // convertedTemperature = (temperature * 9 / 5) + 32;
+       contemp = (temp * 9 / 5) + 32;
+       printf(" %f Celsius is %f Fahrenheit\n",temp,contemp);
+    }
+    else if(unit == 'f'){
+        contemp = (temp - 32) * 5 / 9;
+        printf(" %f Fahrenheit is %f Celsius",temp,contemp);
+    }
+    else{
+        printf("Please Try c OR f ");
+    }
+    
+    return 0;
+}
+
+
+-------------------------------------------------------
+
+------------------------------------------------------------------------
+Design a ticket booking system for a cinema that calculates the ticket price based on the age of the customer. Children (age < 12) get a 50% discount, while seniors (age >= 65) get a 30% discount.
+
+---------------------
+#include<stdio.h>
+int main(){
+    
+    int age,ticket;
+    
+    printf("Enter Your Ticket Price :");
+    scanf("%d",&ticket);
+    
+    printf("Enter Your Age : ");
+    scanf("%d",&age);
+    
+    
+    if(age < 12){
+        
+        ticket = ticket * 00.5;
+        printf("You Get 50%% Discount\n");
+        printf("Final Price Of Your Ticket Is : %d",ticket);
+    }
+    else if(age >= 65){
+        ticket = ticket * 00.7;
+        printf("You Get 30%% Discount\n");
+        printf("Final Price Of Your Ticket Is : %d",ticket);
+    }
+    else{
+        printf("No Discount :( ");
+    }
+    
+    return 0;
+}
+
+----------------------------------------------------------------------------
+---------------------------------------------------------------------------
+Write a program that accepts a student's score as input and calculates their letter grade using if-else if-else statements. Consider the standard letter grading system (A, B, C, D, F).
+
+-----------------
+
+#include<stdio.h>
+int main(){
+    
+    int score;
+    
+    printf("Enter Your Score : ");
+    scanf("%d",&score);
+    
+    if(score >= 80 && score <= 100){
+        printf("Grade A\n");
+    }
+    else if(score >= 70 && score <=79){
+        printf("Grade B\n");
+    }
+    else if(score >= 60 && score <= 69){
+        printf("Grade C\n");
+    }
+    else if(score >= 34 && score <= 59){
+        printf("Grade D\n");
+    }
+    else if(score >= 0 && score <= 33){
+        printf("Fail F");
+    }
+    
+    return 0;
+}
+
+
+
+------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
